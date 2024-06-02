@@ -19,4 +19,12 @@ ActiveRecord::Schema[7.2].define(version: 2024_06_02_054151) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "tracks", force: :cascade do |t|
+    t.string "filename"
+    t.string "title"
+    t.string "artist_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end
